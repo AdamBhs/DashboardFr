@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import logo from '@/assets/iconwhite.png'
 import { cleanPath } from '@/utils/helpers'
 import { useRouter } from 'next/router'
