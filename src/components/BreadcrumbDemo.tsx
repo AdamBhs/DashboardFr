@@ -17,9 +17,9 @@ export function BreadcrumbDemo({ path }: propsType) {
       <BreadcrumbList>
         {path.map((value, index) => (
           <React.Fragment key={index}>
-            {index == 1 ? <BreadcrumbSeparator /> : null}
+            {index >= 1 ? <BreadcrumbSeparator /> : null}
             <BreadcrumbItem>
-              <BreadcrumbLink className={index != 0 ? 'text-[#4658AC]' : ''}>
+              <BreadcrumbLink className={index == path.length - 1 ? 'text-[#4658AC]' : ''}>
                 {upperCase(value)}
               </BreadcrumbLink>
             </BreadcrumbItem>

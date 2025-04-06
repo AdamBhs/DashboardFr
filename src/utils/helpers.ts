@@ -3,7 +3,6 @@ export function cleanPath(path: string) {
   return upperCase(str)
 }
 
-
 export function firstWord(path: string) {
   return cleanPath(path).split('/')[0]
 }

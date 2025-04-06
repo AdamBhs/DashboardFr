@@ -22,15 +22,10 @@ function AccordionItem({
 }
 
 interface AccordionTriggerProps extends React.ComponentProps<typeof AccordionPrimitive.Trigger> {
-  ChevronDown?: string 
+  ChevronDown?: string
 }
 
-function AccordionTrigger({
-  className,
-  children,
-  ChevronDown,
-  ...props
-}: AccordionTriggerProps) {
+function AccordionTrigger({ className, children, ChevronDown, ...props }: AccordionTriggerProps) {
   return (
     <AccordionPrimitive.Header className="flex">
       <AccordionPrimitive.Trigger
@@ -42,7 +37,9 @@ function AccordionTrigger({
         {...props}
       >
         {children}
-        <ChevronDownIcon className={`${ChevronDown == "true" ? "text-muted-foreground pointer-events-none size-5 shrink-0 translate-y-0.5 text-white transition-transform duration-200" : "hidden"} `} />
+        <ChevronDownIcon
+          className={`${ChevronDown == 'true' ? 'text-muted-foreground pointer-events-none size-5 shrink-0 translate-y-0.5 text-white transition-transform duration-200' : 'hidden'} `}
+        />
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   )

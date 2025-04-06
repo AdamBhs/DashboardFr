@@ -12,7 +12,7 @@ export default function Layout({ children }: LayoutProps) {
       <Navbar />
       <div className="flex flex-1 overflow-hidden">
         <Sidebar />
-        <main className="flex-1 overflow-y-auto bg-[#FAFAFA] p-4">{children}</main>
+        <main className="flex-1 overflow-y-auto bg-[#FAFAFA] px-10 py-6">{children}</main>
       </div>
     </div>
   )

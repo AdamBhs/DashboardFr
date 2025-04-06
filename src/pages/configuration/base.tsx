@@ -1,7 +1,3 @@
-
-
 export default function base() {
-  return (
-    <div>base</div>
-  )
+  return <div>base</div>
 }
