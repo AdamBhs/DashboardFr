@@ -40,7 +40,6 @@ export function AccordionDemo() {
         </AccordionItem>
 
         <AccordionItem value="item-2" className="rounded-md">
-          <Link href="/configuration">
             <AccordionTrigger
               onClick={() => handleAccordionState(firstWord(router.pathname))}
               className={`${firstWord(router.pathname) === 'Configuration' && accordionState ? 'bg-blue-500' : ''} cursor-pointer rounded-md`}
@@ -51,7 +50,6 @@ export function AccordionDemo() {
                 Configuration
               </div>
             </AccordionTrigger>
-          </Link>
           <AccordionContent>
             <ul>
               <Link href="/configuration/users">
